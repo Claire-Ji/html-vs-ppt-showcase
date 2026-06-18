@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>HTML vs PPT: Better Presentations with AI</title>
+  <title>From Slides to Source — HTML, PowerPoint &amp; the AI Era</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%230a0f1a'/%3E%3Cdefs%3E%3ClinearGradient%20id='g'%20x1='0'%20y1='0'%20x2='1'%20y2='1'%3E%3Cstop%20offset='0'%20stop-color='%233cd6ff'/%3E%3Cstop%20offset='1'%20stop-color='%23ffb454'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath%20d='M13%2010l9%206-9%206z'%20fill='url(%23g)'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/fonts.css">
   <link rel="stylesheet" href="assets/base.css">
   <link rel="stylesheet" id="theme-link" href="assets/themes/tokyo-night.css">
@@ -13,107 +14,198 @@
 <body class="tpl-showcase mode-html">
 <div class="deck">
 
-  <section class="slide" data-title="Living Deck">
+  <!-- ============================ SLIDE 1 — HERO ============================ -->
+  <section class="slide slide-hero" data-title="The Shift">
     <div class="stage">
       <div class="hero-two">
-        <div>
-          <p class="kicker">01 / LIVING DECK</p>
-          <h1 class="h1">HTML vs PPT:<br><span class="glow">same story, different stage</span></h1>
-          <p class="lede">PPT is a polished file for linear delivery. HTML is a live surface for interaction, motion, branching, data, and AI-readable structure.</p>
+        <div class="hero-copy">
+          <p class="kicker">Rethinking the presentation</p>
+          <h1 class="h1">The slide stopped being a file.<br><span class="glow">It became a living interface.</span></h1>
+          <p class="lede">PowerPoint ships a polished document. The browser ships a system — interactive, versioned, runs anywhere, and readable by AI. Same story, a very different stage machine.</p>
           <div class="hud">
-            <span class="chip">Images</span>
-            <span class="chip">Looping visual</span>
-            <span class="chip">Scenario switcher</span>
-            <span class="chip">AI workflow</span>
+            <span class="chip">Interactive</span>
+            <span class="chip">Versioned in Git</span>
+            <span class="chip">Runs anywhere</span>
+            <span class="chip">AI-readable source</span>
           </div>
         </div>
-        <div class="video-frame">
-          <img src="assets/video/showcase-loop.gif" alt="Looping visual montage of HTML, PPT and AI presentation scenes">
+        <div class="hero-visual">
+          <div class="video-frame">
+            <img src="assets/video/showcase-loop.gif" alt="Looping montage of HTML, PPT and AI presentation scenes">
+          </div>
         </div>
       </div>
     </div>
     <aside class="notes">
-      <p>This opening makes the difference immediate. PPT is strong when a presentation should behave like a controlled file. HTML is strong when the presentation should behave like an interactive surface with motion, data, branching, and reusable source.</p>
+      <p>Open on the reframe: a deck is no longer just a static artifact you email around. In the browser it behaves like a live interface — it can respond, animate, embed real apps, pull data, and be managed like source code.</p>
+      <p>The point isn't that one tool always wins. It's that the medium changes what the author can do — and AI gets dramatically more useful once the deck is readable, editable source.</p>
     </aside>
   </section>
 
-  <section class="slide" data-title="Use Cases">
-    <img class="bg-art" src="assets/images/split-world.png" alt="">
-    <div class="shade"></div>
+  <!-- ====================== SLIDE 2 — WHY THE BROWSER WINS ================== -->
+  <section class="slide" data-title="Why HTML">
     <div class="stage">
-      <p class="kicker">02 / APPLICATION SCENARIOS</p>
-      <h2 class="h2">Choose the medium by use case, not by habit.</h2>
-      <div class="scenario-tabs">
-        <button class="is-on" data-scenario="briefing" type="button">Executive briefing</button>
-        <button data-scenario="product" type="button">Product launch</button>
-        <button data-scenario="training" type="button">Training</button>
-        <button data-scenario="report" type="button">Living report</button>
-      </div>
-      <div class="panel scenario-panel is-on" data-panel="briefing">
-        <h3>Executive briefing</h3>
-        <p>PPT wins when leaders need a short, linear argument with controlled pacing and an easy file handoff.</p>
-      </div>
-      <div class="panel scenario-panel" data-panel="product">
-        <h3>Product launch</h3>
-        <p>HTML wins when the story benefits from demos, motion, clickable flows, responsive layouts, and audience exploration.</p>
-      </div>
-      <div class="panel scenario-panel" data-panel="training">
-        <h3>Training</h3>
-        <p>Use PPT for standardized sessions; use HTML when learners need branching examples, embedded media, and self-paced interaction.</p>
-      </div>
-      <div class="panel scenario-panel" data-panel="report">
-        <h3>Living report</h3>
-        <p>HTML wins when the deck needs updates, source links, version history, charts, and AI-assisted maintenance over time.</p>
-      </div>
-      <div class="media-strip">
-        <img src="assets/images/split-world.png" alt="">
-        <img src="assets/images/ai-workbench.png" alt="">
-        <img src="assets/images/interactive-cockpit.png" alt="">
+      <p class="kicker">02 — Why the browser wins</p>
+      <h2 class="h2">A deck used to be a file. Now it can be a <span class="glow">system</span>.</h2>
+      <div class="points">
+        <div class="point">
+          <span class="point-no">01</span>
+          <h3>No ceiling</h3>
+          <p>The browser is a universal machine. Live demos, embedded apps, audience polls, custom controls — if you can imagine it, you can build it into the slide.</p>
+        </div>
+        <div class="point">
+          <span class="point-no">02</span>
+          <h3>Source you can version</h3>
+          <p>Slides are text. Diff them, branch them, review them in Git. No more <code>final_v7_REALLY.pptx</code> living in your inbox.</p>
+        </div>
+        <div class="point">
+          <span class="point-no">03</span>
+          <h3>Content over decoration</h3>
+          <p>Separate content from style. Stop nudging boxes for 90% of the time — write the argument once and let a stylesheet make every slide consistent.</p>
+        </div>
+        <div class="point">
+          <span class="point-no">04</span>
+          <h3>Made for AI</h3>
+          <p>The deck <em>is</em> editable source. AI can read the structure, rewrite a claim, restyle the system, and adapt one message across formats.</p>
+        </div>
       </div>
     </div>
     <aside class="notes">
-      <p>This slide adds direct interaction. The viewer can switch scenarios and see that the right medium depends on the job. It is not HTML versus PPT as a binary argument. It is about matching the format to the communication problem.</p>
+      <p>Distilled from the best writing on this shift (Marcin Wichary, Jan Hartenfeller, Quinn Daley). The strongest line: "If you need anything, anything at all, you can build it yourself." PowerPoint limits you to its designers' features; HTML has no ceiling.</p>
+      <p>Versioning and content-over-decoration are the day-to-day wins. The AI point is what makes this matter <em>now</em> — which the next slide quantifies.</p>
     </aside>
   </section>
 
-  <section class="slide" data-title="AI Workflow">
-    <img class="bg-art" src="assets/images/ai-workbench.png" alt="">
-    <div class="shade"></div>
+  <!-- ========================= SLIDE 3 — DATA / WHY NOW ==================== -->
+  <section class="slide slide-data" data-title="Why Now">
     <div class="stage">
-      <p class="kicker">03 / AI WORKFLOW</p>
-      <h2 class="h2">AI makes better decks when it works on structure, not just decoration.</h2>
-      <div class="workflow">
-        <div class="step"><span>01</span><b>Frame</b><p>Define audience, goal, timing, and the change you want after the talk.</p></div>
-        <div class="step"><span>02</span><b>Claim</b><p>Turn each slide title into a complete point, not a topic label.</p></div>
-        <div class="step"><span>03</span><b>Compose</b><p>Use templates, image systems, and layout rules instead of hand-polishing every page.</p></div>
-        <div class="step"><span>04</span><b>Rehearse</b><p>Use notes, preview, timing, and revision loops to make delivery smoother.</p></div>
-      </div>
-      <div class="mini-proof">
-        <div><b>In PPT</b><p>AI helps plan and write, but many final layout edits remain manual.</p></div>
-        <div><b>In HTML</b><p>AI can edit source, states, CSS, notes, media, and reusable components.</p></div>
-        <div><b>Best result</b><p>Human judgment plus AI structure plus the right medium for the moment.</p></div>
+      <p class="kicker">03 — Why now</p>
+      <h2 class="h2">AI crossed the threshold — in <span class="glow">capability</span> and <span class="glow">adoption</span>.</h2>
+
+      <div class="data-grid">
+        <!-- ---- Multi-series line chart: benchmark scores 2023 → 2026 ---- -->
+        <figure class="chart-card">
+          <figcaption>Frontier-model benchmark scores, % — climbing toward the ceiling</figcaption>
+          <svg class="chart" viewBox="0 0 680 392" role="img" aria-label="Line chart of frontier model benchmark scores from 2023 to 2026">
+            <!-- horizontal gridlines + y labels (0,25,50,75,100) -->
+            <g class="grid">
+              <line x1="52" y1="22"    x2="588" y2="22"></line>
+              <line x1="52" y1="100.5" x2="588" y2="100.5"></line>
+              <line x1="52" y1="179"   x2="588" y2="179"></line>
+              <line x1="52" y1="257.5" x2="588" y2="257.5"></line>
+              <line x1="52" y1="336"   x2="588" y2="336"></line>
+            </g>
+            <g class="axis-y">
+              <text x="42" y="26">100</text>
+              <text x="42" y="104">75</text>
+              <text x="42" y="183">50</text>
+              <text x="42" y="261">25</text>
+              <text x="42" y="340">0</text>
+            </g>
+            <g class="axis-x">
+              <text x="52"  y="360">2023</text>
+              <text x="230.7" y="360">2024</text>
+              <text x="409.3" y="360">2025</text>
+              <text x="588" y="360">2026</text>
+            </g>
+
+            <!-- SWE-bench Verified (mint) -->
+            <polyline class="chart-line" data-series="swe"
+              points="52,298.3 230.7,201 409.3,119.3 588,81.7"></polyline>
+            <!-- GPQA Diamond (amber) -->
+            <polyline class="chart-line" data-series="gpqa"
+              points="52,216.7 230.7,147.6 409.3,72.2 588,40.8"></polyline>
+            <!-- MMLU (azure) -->
+            <polyline class="chart-line" data-series="mmlu"
+              points="52,66 230.7,56.5 409.3,47.1 588,44"></polyline>
+
+            <!-- data points with native tooltips -->
+            <g class="dots" data-series="swe">
+              <circle cx="52" cy="298.3" r="4"><title>SWE-bench 2023 · 12%</title></circle>
+              <circle cx="230.7" cy="201" r="4"><title>SWE-bench 2024 · 43%</title></circle>
+              <circle cx="409.3" cy="119.3" r="4"><title>SWE-bench 2025 · 69%</title></circle>
+              <circle cx="588" cy="81.7" r="4.5"><title>SWE-bench 2026 · 81%</title></circle>
+            </g>
+            <g class="dots" data-series="gpqa">
+              <circle cx="52" cy="216.7" r="4"><title>GPQA 2023 · 38%</title></circle>
+              <circle cx="230.7" cy="147.6" r="4"><title>GPQA 2024 · 60%</title></circle>
+              <circle cx="409.3" cy="72.2" r="4"><title>GPQA 2025 · 84%</title></circle>
+              <circle cx="588" cy="40.8" r="4.5"><title>GPQA 2026 · 94%</title></circle>
+            </g>
+            <g class="dots" data-series="mmlu">
+              <circle cx="52" cy="66" r="4"><title>MMLU 2023 · 86%</title></circle>
+              <circle cx="230.7" cy="56.5" r="4"><title>MMLU 2024 · 89%</title></circle>
+              <circle cx="409.3" cy="47.1" r="4"><title>MMLU 2025 · 92%</title></circle>
+              <circle cx="588" cy="44" r="4.5"><title>MMLU 2026 · 93%</title></circle>
+            </g>
+
+            <!-- end-of-line value labels -->
+            <g class="end-labels">
+              <text x="600" y="37"  data-series="gpqa">94</text>
+              <text x="600" y="52"  data-series="mmlu">93</text>
+              <text x="600" y="86"  data-series="swe">81</text>
+            </g>
+          </svg>
+          <div class="legend">
+            <button class="leg" data-series="mmlu" type="button"><i></i>MMLU</button>
+            <button class="leg" data-series="gpqa" type="button"><i></i>GPQA Diamond</button>
+            <button class="leg" data-series="swe" type="button"><i></i>SWE-bench Verified</button>
+          </div>
+        </figure>
+
+        <!-- ---- KPI big numbers (counter-up animated by runtime.js) ---- -->
+        <div class="kpis">
+          <div class="kpi">
+            <b><span class="counter" data-to="900" data-dur="1500">0</span><i>M</i></b>
+            <span class="kpi-label">ChatGPT weekly active users</span>
+          </div>
+          <div class="kpi">
+            <b><i class="pre">$</i><span class="counter" data-to="25" data-dur="1500">0</span><i>B</i></b>
+            <span class="kpi-label">OpenAI annualized revenue</span>
+          </div>
+          <div class="kpi">
+            <b><span class="counter" data-to="4" data-dur="1500">0</span><i>M</i></b>
+            <span class="kpi-label">developers building on the API</span>
+          </div>
+          <div class="kpi">
+            <b><span class="counter" data-to="92" data-dur="1500">0</span><i>%</i></b>
+            <span class="kpi-label">of the Fortune 500 use it</span>
+          </div>
+        </div>
       </div>
     </div>
     <aside class="notes">
-      <p>This slide explains how AI should be used. The most valuable AI work is not making slides pretty. It is helping with framing, claims, structure, speaker notes, consistency, and rehearsal. HTML exposes more of that structure to AI.</p>
+      <p>Capability: harder benchmarks are converging on the ceiling. GPQA Diamond and SWE-bench Verified climbed from ~38% / ~12% in 2023 to ~94% / ~81% in 2026, chasing MMLU (already ~93% and saturated). Scores are approximate, drawn from public leaderboards (llm-stats.com and reported model cards).</p>
+      <p>Adoption: ChatGPT ~900M weekly active users (Feb 2026, ~2× year-over-year), OpenAI ~$25B annualized revenue, ~4M developers, ~92% of the Fortune 500. Sources: demandsage, technologychecker, almcorp (June 2026). Hover the legend to isolate a line; hover a point for its value — interactivity that a static slide can't do.</p>
     </aside>
   </section>
 
-  <section class="slide" data-title="Decision Rule">
-    <img class="bg-art" src="assets/images/interactive-cockpit.png" alt="">
-    <div class="shade"></div>
+  <!-- ========================= SLIDE 4 — THE TAKEAWAY ===================== -->
+  <section class="slide" data-title="The Takeaway">
     <div class="stage">
-      <p class="kicker">04 / DECISION RULE</p>
-      <h2 class="h2">Use PPT for controlled delivery. Use HTML for living experiences.</h2>
+      <p class="kicker">04 — The takeaway</p>
+      <h2 class="h2">Use the medium that makes people <span class="glow">understand faster</span>.</h2>
       <div class="final-grid">
-        <div class="takeaway"><strong>1</strong><h3>PPT</h3><p>Board updates, sales decks, formal reviews, offline sharing, and familiar enterprise workflows.</p></div>
-        <div class="takeaway"><strong>2</strong><h3>HTML</h3><p>Interactive demos, product stories, live reports, training portals, model cards, and public pages.</p></div>
-        <div class="takeaway"><strong>3</strong><h3>AI</h3><p>Use it to sharpen the story, generate visuals, check consistency, and adapt one message across formats.</p></div>
+        <div class="takeaway">
+          <strong>PPT</strong>
+          <h3>Controlled delivery</h3>
+          <p>Board updates, sales decks, formal reviews, offline hand-offs, familiar enterprise workflows.</p>
+        </div>
+        <div class="takeaway">
+          <strong>HTML</strong>
+          <h3>Living experiences</h3>
+          <p>Interactive demos, product stories, live reports, training portals, model cards, public pages.</p>
+        </div>
+        <div class="takeaway">
+          <strong>AI</strong>
+          <h3>The bridge</h3>
+          <p>Reads the source, sharpens the story, generates the visuals, and adapts one message across both formats.</p>
+        </div>
       </div>
-      <p class="lede">The future of presentations is not one format winning. It is choosing the format that makes the audience understand faster.</p>
+      <p class="closing">The future isn't one format winning — it's choosing the one that lands.</p>
     </div>
     <aside class="notes">
-      <p>Close with a practical rule. PPT is for controlled delivery and familiar file workflows. HTML is for living, interactive experiences. AI bridges the two by helping adapt one message into different formats.</p>
+      <p>Close on a practical rule, not a verdict. PowerPoint is excellent for controlled, offline, familiar delivery. HTML wins for living, interactive, data-driven experiences. AI is the bridge that turns one message into either, because it can read and write the source.</p>
     </aside>
   </section>
 
@@ -121,13 +213,27 @@
 
 <script src="assets/runtime.js"></script>
 <script>
-  document.querySelectorAll("[data-scenario]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const key = button.dataset.scenario;
-      document.querySelectorAll("[data-scenario]").forEach((b) => b.classList.toggle("is-on", b === button));
-      document.querySelectorAll("[data-panel]").forEach((panel) => panel.classList.toggle("is-on", panel.dataset.panel === key));
+  /* Slide 3 — interactive legend: hovering/clicking a series isolates its
+     line. A small, on-thesis demonstration that this deck is itself a live
+     interface, not a static export. */
+  (function () {
+    var lines = Array.prototype.slice.call(document.querySelectorAll('.chart-line'));
+    function emphasize(key, on) {
+      lines.forEach(function (l) {
+        l.classList.toggle('dim', on && l.getAttribute('data-series') !== key);
+      });
+      document.querySelectorAll('.legend .leg').forEach(function (b) {
+        b.classList.toggle('muted', on && b.getAttribute('data-series') !== key);
+      });
+    }
+    document.querySelectorAll('.legend .leg').forEach(function (btn) {
+      var key = btn.getAttribute('data-series');
+      btn.addEventListener('mouseenter', function () { emphasize(key, true); });
+      btn.addEventListener('mouseleave', function () { emphasize(key, false); });
+      btn.addEventListener('focus', function () { emphasize(key, true); });
+      btn.addEventListener('blur', function () { emphasize(key, false); });
     });
-  });
+  })();
 </script>
 </body>
 </html>
